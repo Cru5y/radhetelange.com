@@ -17,3 +17,4 @@ function allMight() {
   var element = document.getElementById("allMightBtn");
   element.classList.toggle("all-might-button-hover");
 }
+
