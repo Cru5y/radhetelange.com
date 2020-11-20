@@ -10159,9 +10159,10 @@ h3 {
   #mainNav .navbar-brand {
     font-size: 1.75em;
     transition: font-size 0.3s;
+    margin-top: 10px;
   }
   #mainNav .navbar-nav {
-    margin-top: 0;
+    margin-top: 10px;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
