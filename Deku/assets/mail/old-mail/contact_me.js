@@ -11,6 +11,7 @@ $(function () {
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#email").val();
+            var phone = $("input#phone").val();
             var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
@@ -24,6 +25,7 @@ $(function () {
                 type: "POST",
                 data: {
                     name: name,
+                    phone: phone,
                     email: email,
                     message: message,
                 },
@@ -55,7 +57,7 @@ $(function () {
                         $("<strong>").text(
                             "Sorry " +
                                 firstName +
-                                ", it seems that my mail server is not responding. Please notify me at contact@radhetelange.com"
+                                ", it seems that my mail server is not responding. Please try again later!"
                         )
                     );
                     $("#success > .alert-danger").append("</div>");

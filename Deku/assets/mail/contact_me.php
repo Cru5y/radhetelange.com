@@ -1,17 +1,3 @@
-<?php
-if (!isset($_POST['submit'])) {
-   echo "<p>Error</p>";
-   exit;
-}
-
-$email = preg_replace("([\r\n])", "", $email);
-
-$find = "/(content-type|bcc:|cc:)/i";
-if (preg_match($find, $name) || preg_match($find, $email) || preg_match($find, $url) || preg_match($find, $comments)) {
-   echo "<p>Error</p>";
-   exit;
-}
-?>
 
 <?php
 
