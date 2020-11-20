@@ -1,33 +1,22 @@
-
 <?php
+// Check for empty fields
+if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+  http_response_code(500);
+  exit();
+}
 
-// multiple recipients (note the commas)
-$to = "contact@radhetelange.com";
+$name = strip_tags(htmlspecialchars($_POST['name']));
+$email = strip_tags(htmlspecialchars($_POST['email']));
+$phone = strip_tags(htmlspecialchars($_POST['phone']));
+$message = strip_tags(htmlspecialchars($_POST['message']));
 
-// subject
-$subject = "New mail from radhetelange.com/deku";
+// Create the email and send the message
+$to = "yourname@yourdomain.com"; // Add your email address in between the "" replacing yourname@yourdomain.com - This is where the form will send a message to.
+$subject = "Website Contact Form:  $name";
+$body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email\n\nPhone: $phone\n\nMessage:\n$message";
+$header = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$header .= "Reply-To: $email";	
 
-// compose message
-$message = "
-<html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <h1>Topic</h1>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-       Nam iaculis pede ac quam. Etiam placerat suscipit nulla.
-       Maecenas id mauris eget tortor facilisis egestas.
-       Praesent ac augue sed <a href=\"http://lipsum.com/\">enim</a> aliquam auctor.
-       Pellentesque convallis tempor tortor. Nullam nec purus.</p>
-  </body>
-</html>
-";
-
-// To send HTML mail, the Content-type header must be set
-$headers = "MIME-Version: 1.0\r\n";
-$headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
-
-// send email
-mail($to, $subject, $message, $headers);
+if(!mail($to, $subject, $body, $header))
+  http_response_code(500);
 ?>
