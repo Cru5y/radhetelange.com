@@ -1,21 +1,47 @@
 <?php
-// Check for empty fields
-if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-  http_response_code(500);
-  exit();
+if (!isset($_POST['submit'])) {
+   echo "<p>Error</p>";
+   exit;
 }
 
-$name = strip_tags(htmlspecialchars($_POST['name']));
-$email = strip_tags(htmlspecialchars($_POST['email']));
-$message = strip_tags(htmlspecialchars($_POST['message']));
+$email = preg_replace("([\r\n])", "", $email);
 
-// Create the email and send the message
-$to = "contact@radhetelange.com"; // Add your email address in between the "" replacing yourname@yourdomain.com - This is where the form will send a message to.
+$find = "/(content-type|bcc:|cc:)/i";
+if (preg_match($find, $name) || preg_match($find, $email) || preg_match($find, $url) || preg_match($find, $comments)) {
+   echo "<p>Error</p>";
+   exit;
+}
+?>
+
+<?php
+
+// multiple recipients (note the commas)
+$to = "contact@radhetelange.com";
+
+// subject
 $subject = "New mail from radhetelange.com/deku";
-$body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $emai\n\nMessage:\n$message";
-$header = "From: noreply@radhetelange.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$header .= "Reply-To: $email";	
 
-if(!mail($to, $subject, $body, $header))
-  http_response_code(500);
+// compose message
+$message = "
+<html>
+  <head>
+    <title>Title</title>
+  </head>
+  <body>
+    <h1>Topic</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+       Nam iaculis pede ac quam. Etiam placerat suscipit nulla.
+       Maecenas id mauris eget tortor facilisis egestas.
+       Praesent ac augue sed <a href=\"http://lipsum.com/\">enim</a> aliquam auctor.
+       Pellentesque convallis tempor tortor. Nullam nec purus.</p>
+  </body>
+</html>
+";
+
+// To send HTML mail, the Content-type header must be set
+$headers = "MIME-Version: 1.0\r\n";
+$headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
+
+// send email
+mail($to, $subject, $message, $headers);
 ?>
