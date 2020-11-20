@@ -10195,6 +10195,7 @@ h3 {
 }
 .masthead .masthead-avatar {
   width: 15rem;
+  margin-right: 20px;
 }
 
 @media (min-width: 992px) {
@@ -10205,6 +10206,8 @@ h3 {
   .masthead .masthead-heading {
     font-size: 4rem;
     line-height: 3.5rem;
+    margin-top: -33px;
+    margin-bottom: 47px !important;
   }
   .masthead .masthead-subheading {
     font-size: 1.5rem;
