@@ -116,12 +116,14 @@ body::-webkit-scrollbar-thumb{
 .fights-text{
   padding-bottom: 2rem;
 }
+
 @media (min-width: 992px) {
   .fights-text{
     padding-bottom: 2rem;
     margin-top: -3rem;
   }
 }
+
 /*Header section */
 
 /* @media (pointer: coarse) and (hover: none) {
