@@ -213,7 +213,39 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                        <form class="" id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <form action="https://radhetelange.us7.list-manage.com/subscribe/post" method="POST">
+                            <input type="hidden" name="u" value="f7bd3618400b2c46dd11ed5a1">
+                            <input type="hidden" name="id" value="9a3965a478">
+                            <!-- people should not fill these in and expect good things -->
+                            
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label for="MERGE1">Name<span class="req asterisk">*</span></label>
+                                    <input type="text" name="MERGE1" id="MERGE1" size="25" value="" placeholder="Name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label for="MERGE0">Email<span class="req asterisk">*</span></label>
+                                <input type="email" autocapitalize="off" autocorrect="off" placeholder="Email" name="MERGE0" id="MERGE0" size="25" value="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                <label for="MERGE2">Add a message <span class="req asterisk">*</span></label>
+                                <input type="text" name="MERGE2" id="MERGE2" size="25" value="" placeholder="Your Message" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary btn-xl control-group-all" id="sendMessageButton" type="submit" onclick="bounceButton()" onMouseOver="sendAnimation()" onMouseOut="sendAnimation()">
+                                <input type="submit" class="formEmailButton" name="submit" value="Send">
+                                </button>
+                            </div>
+                            <input type="hidden" name="ht" value="1baaa97fc27e12e6e4967831c3f7e4a772d3c82a:MTYwNzE4MDU0Mi41ODI5">
+                            <input type="hidden" name="mc_signupsource" value="hosted">
+                        </form>
+
+                        <!-- <form class="" id="contactForm" name="sentMessage" novalidate="novalidate">
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                     <label>Name</label>
@@ -237,8 +269,11 @@
                             </div>
                             <br />
                             <div class="control-group-all" id="success"></div>
-                            <div class="form-group"><button class="btn btn-primary btn-xl control-group-all" id="sendMessageButton" type="submit" onclick="bounceButton()" onMouseOver="sendAnimation()" onMouseOut="sendAnimation()">Send</button></div>
-                        </form>
+                            <div class="form-group">
+                                <button class="btn btn-primary btn-xl control-group-all" id="sendMessageButton" type="submit" onclick="bounceButton()" onMouseOver="sendAnimation()" onMouseOut="sendAnimation()">
+                                    Send
+                                </button></div>
+                        </form> -->
                     </div>
                 </div>
             </div>
