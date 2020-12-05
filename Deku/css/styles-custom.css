@@ -486,7 +486,7 @@ footer {
     background-position: 0 50px;
     position: absolute;
     z-index: 0;
-    bottom: -85%;
+    bottom: -69.5%%;
     left: 5%;
     display: block;
   }
@@ -519,7 +519,7 @@ body {
 }
 
 #section10 a {
-  padding-top: 60px;
+  padding-top: 40px;
 }
 #section10 a span {
   position: absolute;
