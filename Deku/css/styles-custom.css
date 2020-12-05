@@ -373,11 +373,11 @@ footer {
 .floor_row {
   width: 3000px;
   position: relative;
-  left: -988px;
+  left: -993px;
 }
 
 .floor_row:nth-child(even) {
-  left: -1100px;
+  left: -1105px;
 }
 
 .floor_panel {
@@ -586,7 +586,7 @@ body {
 }
 
 #mc_embed_signup form {
-  padding-bottom: 0px !important;
+  padding: 0px !important;
 }
 
 #mc-embedded-subscribe {
