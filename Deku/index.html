@@ -13,14 +13,32 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        
+        <!-- MDB -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Material Design Bootstrap -->
+        <link rel="stylesheet" href="css/mdb.min.css">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/styles-custom.css" rel="stylesheet" />
+        <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/f7bd3618400b2c46dd11ed5a1/701a9787ccec8d5b58f9fc6ed.js");</script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <img class="navbar-logo-1" src="assets/img-custom/deku-logo.webp">
+        
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <!-- <div class="floor-container">
+                <div class="animated-floor-2  ">
+                        <div class="floor_grid-2">
+                            <div class="floor_row-2" style="top: 0px;">
+                                <div class="floor_panel-2"></div>
+                                <div class="floor_panel-2"></div>
+                                <div class="floor_panel-2"></div>
+                            </div>
+                        </div>
+                </div>
+            </div> -->
             <div class="container">
                 <img class="navbar-logo-2" src="assets/img-custom/deku-logo.webp">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top">Deku</a>
@@ -37,6 +55,7 @@
                 </div>
             </div>
         </nav>
+        
         <!-- Masthead-->
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
@@ -86,8 +105,9 @@
                     <div class="carousel-inner carousel-hover">
                         <div class="carousel-item active" data-interval="100000">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                            <img class="d-block w-100" src="assets/img-custom/deku-vs-todo-2.gif" alt="First slide" />
+                            <img class="fights d-block" src="assets/img-custom/deku-vs-todo-2.gif" alt="First slide" />
                             <div class="carousel-caption">
+                                <p>vs Todoroki</p>
                                 <i class="fas fa-play-circle fa-5x"></i>
                                 <span class="fas-spacer"></span>
                             </div>
@@ -98,6 +118,7 @@
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
                             <img class="d-block w-100" src="assets/img-custom/deku-vs-baku.gif" alt="First slide" />
                             <div class="carousel-caption">
+                                <p>vs Bakugou</p>
                                 <i class="fas fa-play-circle fa-5x"></i>
                                 <span class="fas-spacer"></span>
                             </div>
@@ -108,6 +129,7 @@
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
                             <img class="d-block w-100" src="assets/img-custom/deku-vs-musc-2.gif" alt="First slide" />
                             <div class="carousel-caption">
+                                <p>vs Muscular</p>
                                 <i class="fas fa-play-circle fa-5x"></i>
                                 <span class="fas-spacer"></span>
                             </div>
@@ -116,8 +138,9 @@
                         </div>
                         <div class="carousel-item" data-interval="100000">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-                            <img class="d-block w-100" src="assets/img-custom/deku-woods-2.gif" alt="First slide" />
+                                <img class="d-block w-100" src="assets/img-custom/deku-woods-2.gif" alt="First slide" />
                             <div class="carousel-caption">
+                                <p>Training</p>
                                 <i class="fas fa-play-circle fa-5x"></i>
                                 <span class="fas-spacer"></span>
                             </div>
@@ -190,11 +213,11 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                        <form method="post" action="assets/mail/contact_me.php" class="" id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <form class="" id="contactForm" name="sentMessage" novalidate="novalidate">
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                                     <label>Name</label>
-                                    <input class="form-control" id="name" type="text" placeholder="Your Name 5" required="required" data-validation-required-message="Please enter your name." />
+                                    <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name." />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -220,7 +243,8 @@
                 </div>
             </div>
         </section>
-        <div class="animated-floor">
+        <!-- animated floor -->
+        <div class="animated-floor ">
             <!--inital prototye: https://codepen.io/anon/pen/vabGoq-->
                 <div class="floor_grid" data-rows="11" style="height: 800px;">
                     <div class="floor_row" style="top: 0px;">
@@ -378,7 +402,7 @@
                         <div class="floor_panel"></div>
                     </div>
                 </div>
-            </div>
+        </div>    
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
@@ -630,5 +654,15 @@
         <script src="js/scripts.js"></script>
         <script src="js/scripts-custom.js"></script>
         <script src="js/bcSwipe-master/jquery.bcSwipe.js"></script>
+          <!-- MDB -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <!-- Your custom scripts (optional) -->
+        <script type="text/javascript"></script>
     </body>
 </html>

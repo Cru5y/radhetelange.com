@@ -18,3 +18,4 @@ function allMight() {
   element.classList.toggle("all-might-button-hover");
 }
 
+
