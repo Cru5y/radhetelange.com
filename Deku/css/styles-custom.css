@@ -280,7 +280,7 @@ footer {
 }
 
 .animated-floor {
-  margin-top: -530px;
+  margin-top: -490px;
   z-index: 1;
   position: relative;
   background: #1abc9c;
@@ -373,11 +373,11 @@ footer {
 .floor_row {
   width: 3000px;
   position: relative;
-  left: -988px;
+  left: -978px;
 }
 
 .floor_row:nth-child(even) {
-  left: -1100px;
+  left: -1090px;
 }
 
 .floor_panel {
@@ -576,4 +576,14 @@ body {
   100% {
     opacity: 0;
   }
+}
+
+/* form section  */
+
+#mc_embed_signup {
+  border: none;
+}
+
+.response {
+  color: #fff;
 }

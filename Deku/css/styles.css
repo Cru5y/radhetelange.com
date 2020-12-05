@@ -10749,8 +10749,8 @@ a.text-dark:focus {
   opacity: 0;
 }
 .floating-label-form-group:not(:first-child) {
-  padding-left: 14px;
-  border-left: 1px solid #e9ecef;
+  padding-left: 0;
+  border-left: none;
 }
 
 .floating-label-form-group-with-value label {
