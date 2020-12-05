@@ -580,8 +580,9 @@ body {
 
 /* form section  */
 
-#mc_embed_signup {
-  border: none;
+#mc_embed_signup,
+#mc_embed_signup:focus {
+  border: none !important;
 }
 
 .response {
