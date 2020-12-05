@@ -10614,7 +10614,7 @@ a.text-dark:focus {
 }
 .masthead {
   z-index: 0;
-  padding-top: 2rem;
+  padding-top: 1rem;
   min-height: -webkit-fill-available;
   height: 100%;
 }
