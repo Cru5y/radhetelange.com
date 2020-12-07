@@ -600,6 +600,12 @@ body {
   background: #1abc9c;
 }
 
+@media (min-width: 992px) {
+  #mc-embedded-subscribe {
+    margin: 0px;
+    background: transparent;
+  }
+}
 .response {
   color: #fff;
 }
