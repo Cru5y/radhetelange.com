@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy New Year 2021</title>
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Atma:wght@600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/topino-stelle-2.png">
+  <link rel="preload" as="image" href="img/topino-stelle-1.png">
+</head>
+<body>
+  <div class="container">
+    <section class="card">
+      <div class="hover-placeholder" id="hover-placeholder"></div>
+      <img src="img/topino-bg.png" alt="">
+      <img src="img/topino-stelle-1.png" class="stars-1" alt="">
+      <img src="img/topino-stelle-2.png" class="stars-2" alt="">
+      <img src="img/topino-light.png" class="main-light" alt="">
+      <img src="img/topino-main-leaf.png" class="main-leaf" alt="" />
+      <img src="img/topino-leaf-1.png" class="l1" id="leaf1" alt="" />
+      <img src="img/topino-leaf-2.png" class="l2" id="leaf2" alt="" />
+      <img src="img/topino-leaf-3.png" class="l3" id="leaf3" alt="" />
+      <img src="img/topino-leaf-4.png" class="l4" id="leaf4" alt="" />
+      <img src="img/topino-leaf-5.png" class="l5" id="leaf5" alt="" />
+      <img src="img/topino-leaf-6.png" class="l6" id="leaf6" alt="" />
+      <img src="img/topino-leaf-7.png" class="l7" id="leaf7" alt="" />
+      <img src="img/topino-leaf-8.png" class="l8" id="leaf8" alt="" />
+      <img src="img/topino-leaf-9.png" class="l9" id="leaf9" alt="" />
+      <img src="img/topino-leaf-10.png" class="l10" id="leaf10" alt="" />
+      <img src="img/topino-leaf-11.png" class="l11" id="leaf11" alt="" />
+      <img src="img/topino-leaf-12.png" class="l12" id="leaf12" alt="" />
+      <img src="img/topino-leaf-13.png" class="l13" id="leaf13" alt="" />
+      <img src="img/topino-leaf-14.png" class="l14" id="leaf14" alt="" />
+      <img src="img/topino-leaf-15.png" class="l15" id="leaf15" alt="" />
+      <img src="img/topino-leaf-16.png" class="l16" id="leaf16" alt="" />
+      <p class="hny-hidden" id="hny">Happy New Year</p>
+      
+    </section>
+  </div>
+</body>
+<script> </script>
+<script>
+"use strict";
+
+var trigger = document.getElementById("hover-placeholder");
+var leaf1 = document.getElementById("leaf1");
+var leaf2 = document.getElementById("leaf2");
+var leaf4 = document.getElementById("leaf4");
+var leaf5 = document.getElementById("leaf5");
+var leaf6 = document.getElementById("leaf6");
+var leaf7 = document.getElementById("leaf7");
+var leaf8 = document.getElementById("leaf8");
+var leaf9 = document.getElementById("leaf9");
+var leaf10 = document.getElementById("leaf10");
+var leaf11 = document.getElementById("leaf11");
+var leaf12 = document.getElementById("leaf12");
+var leaf13 = document.getElementById("leaf13");
+var leaf14 = document.getElementById("leaf14");
+var leaf15 = document.getElementById("leaf15");
+var leaf16 = document.getElementById("leaf16");
+var hny = document.getElementById("hny");
+
+
+
+trigger.addEventListener("click", function(e){
+  e.preventDefault;
+  
+  leaf1.classList.remove("leaf1");
+  leaf2.classList.remove("leaf2");
+  leaf3.classList.remove("leaf3");
+  leaf4.classList.remove("leaf4");
+  leaf5.classList.remove("leaf5");
+  leaf6.classList.remove("leaf6");
+  leaf7.classList.remove("leaf7");
+  leaf8.classList.remove("leaf8");
+  leaf9.classList.remove("leaf9");
+  leaf10.classList.remove("leaf10");
+  leaf11.classList.remove("leaf11");
+  leaf12.classList.remove("leaf12");
+  leaf13.classList.remove("leaf13");
+  leaf14.classList.remove("leaf14");
+  leaf15.classList.remove("leaf15");
+  leaf16.classList.remove("leaf16");
+  hny.classList.remove("hny");
+
+  
+  void trigger.offsetWidth;
+  
+  leaf1.classList.add("leaf1");
+  leaf2.classList.add("leaf2");
+  leaf3.classList.add("leaf3");
+  leaf4.classList.add("leaf4");
+  leaf5.classList.add("leaf5");
+  leaf6.classList.add("leaf6");
+  leaf7.classList.add("leaf7");
+  leaf8.classList.add("leaf8");
+  leaf9.classList.add("leaf9");
+  leaf10.classList.add("leaf10");
+  leaf11.classList.add("leaf11");
+  leaf12.classList.add("leaf12");
+  leaf13.classList.add("leaf13");
+  leaf14.classList.add("leaf14");
+  leaf15.classList.add("leaf15");
+  leaf16.classList.add("leaf16");
+  hny.classList.add("hny");
+
+}, false);
+</script>
+</html>
