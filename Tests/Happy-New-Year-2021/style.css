@@ -170,15 +170,15 @@ p {
 }
 .leaf10 {
   -webkit-animation: light-leafs-appear 5s 0.9s ease forwards;
-  -moz-animation: light-leafs-appear 5s 1.2s ease forwards;
-  -o-animation: light-leafs-appear 5s 1.2s ease forwards;
-  animation: light-leafs-appear 5s 1.2s ease forwards;
-}
-.leaf11 {
-  -webkit-animation: light-leafs-appear 5s 1s ease forwards;
   -moz-animation: light-leafs-appear 5s 0.9s ease forwards;
   -o-animation: light-leafs-appear 5s 0.9s ease forwards;
   animation: light-leafs-appear 5s 0.9s ease forwards;
+}
+.leaf11 {
+  -webkit-animation: light-leafs-appear 5s 1s ease forwards;
+  -moz-animation: light-leafs-appear 5s 1s ease forwards;
+  -o-animation: light-leafs-appear 5s 1s ease forwards;
+  animation: light-leafs-appear 5s 1s ease forwards;
 }
 .leaf12 {
   -webkit-animation: light-leafs-appear 5s 1.1s ease forwards;
@@ -194,9 +194,9 @@ p {
 }
 .leaf14 {
   -webkit-animation: light-leafs-appear 5s 1.3s ease forwards;
-  -moz-animation: light-leafs-appear 5s 1.2s ease forwards;
-  -o-animation: light-leafs-appear 5s 1.2s ease forwards;
-  animation: light-leafs-appear 5s 1.2s ease forwards;
+  -moz-animation: light-leafs-appear 5s 1.3s ease forwards;
+  -o-animation: light-leafs-appear 5s 1.3s ease forwards;
+  animation: light-leafs-appear 5s 1.3s ease forwards;
 }
 .leaf15 {
   -webkit-animation: light-leafs-appear 5s 1.4s ease forwards;
